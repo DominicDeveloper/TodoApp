@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="13dp"
+    android:background="@drawable/bck"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/itemTodoName"
+        android:textSize="19sp"
+        android:text="TODO NAME"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/itemTodoDescription"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/itemTodoName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="10dp"
+        android:maxLength="23"
+        android:text="Description todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/itemToDoDelete"
+        android:src="@drawable/baseline_delete_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+
+    <ImageView
+        android:id="@+id/itemTodoEdit"
+        android:src="@drawable/baseline_edit_24"
+        app:layout_constraintRight_toLeftOf="@id/itemToDoDelete"
+        app:layout_constraintTop_toTopOf="@id/itemToDoDelete"
+        app:layout_constraintBottom_toBottomOf="@id/itemToDoDelete"
+        android:layout_marginEnd="13dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+
+
+    <TextView
+        android:id="@+id/itemTodoCondition"
+        android:text="Holat"
+        app:layout_constraintTop_toBottomOf="@id/itemTodoDescription"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
